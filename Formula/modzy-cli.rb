@@ -5,42 +5,42 @@
 class ModzyCli < Formula
   desc "Repository of Modzy Util taps"
   homepage "https://github.com/modzy/homebrew-tap"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/modzy/cli/releases/download/v1.0.0/modzy-cli_1.0.0_Darwin_arm64.tar.gz"
-      sha256 "31c32ca667ccb168d3b55c1babbf0bd84d89f8b995d5e74d252c92ffafd0c6bd"
+      url "https://github.com/modzy/cli/releases/download/v1.0.1/modzy-cli_1.0.1_Darwin_arm64.tar.gz"
+      sha256 "cb6b643fab4bf27cc5bdf98ca30e6bcce38799b3134e6a1583c3fc7d77e20c82"
 
       def install
-        bin.install "modzy-cli"
+        bin.install "modzy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/modzy/cli/releases/download/v1.0.0/modzy-cli_1.0.0_Darwin_x86_64.tar.gz"
-      sha256 "3b1ee2fcf05df6e9a082a262a6e0330ff2927d5fa2ed3f6a3a7fc9183e8182ae"
+      url "https://github.com/modzy/cli/releases/download/v1.0.1/modzy-cli_1.0.1_Darwin_x86_64.tar.gz"
+      sha256 "602208b0c16ed6efb02263694970c601e8501c21c570cb9def0826aa8a28a891"
 
       def install
-        bin.install "modzy-cli"
+        bin.install "modzy"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/modzy/cli/releases/download/v1.0.0/modzy-cli_1.0.0_Linux_arm64.tar.gz"
-      sha256 "051400a6afcbd5c8a3cc21e42ef28a4f69299c5a70e16963ac564f857d80d6aa"
+      url "https://github.com/modzy/cli/releases/download/v1.0.1/modzy-cli_1.0.1_Linux_arm64.tar.gz"
+      sha256 "f92255c3c3341d82f97de952fe7bce0112f301499ae3f344083e2eea2415edba"
 
       def install
-        bin.install "modzy-cli"
+        bin.install "modzy"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/modzy/cli/releases/download/v1.0.0/modzy-cli_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "a523326c080271c316d3c7543680f0b2fe1c246975d542b9c53c6d2cebb7a21b"
+      url "https://github.com/modzy/cli/releases/download/v1.0.1/modzy-cli_1.0.1_Linux_x86_64.tar.gz"
+      sha256 "f201795c5b5fa61bfbccf0edc46bb2dd3e58665eb2875ab40d710432d0c150b6"
 
       def install
-        bin.install "modzy-cli"
+        bin.install "modzy"
       end
     end
   end
